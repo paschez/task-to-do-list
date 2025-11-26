@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(230deg, rgb(43, 36, 69));
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+}
+.wrapper{
+    width: 95%;
+    margin-top: 4rem;
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(230deg, rgb(163, 50, 50), black, rgb(25, 100, 39));
+}
+input{
+    width: 65%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+}
+input:hover{
+    border: 2px solid rgb(42, 185, 78);
+}
+.task-container{
+    margin-top: 3rem;
+}
+button{
+    margin-left: 10px;
+    width: 30%;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+     background: linear-gradient(to  left, rgb(25, 100, 39), blue,  rgb(163, 50, 50));
+}
+button:hover{
+    border: 2px solid rgb(151, 13, 13);
+    color: white;
+    background: linear-gradient(to left, rgb(44, 171, 67), rgb(27, 27, 135),  rgb(220, 121, 121));
+    box-shadow: -1px -2px 2px, 1px 2px 2px;
+}
+button:active{
+   background: (to left, rgb(25, 100, 39), blue,  rgb(230, 120, 120));
+}
+ul{
+    list-style: none;
+    margin-top: 4rem;
+    font-size: 20px;
+    color: white;
+}
+ul li{
+    padding-top: 10px;
+    /* display: flex;
+    justify-content: space-between; */
+    position: relative;
+    padding: 20px;
+    padding-left: 3rem;
+    cursor: pointer;
+    font-size: 20px;
+}
+ul li:hover{
+    border: 3px solid  rgb(46, 172, 73);
+    border-radius: 40px;
+}
+ul li::before{
+    content: "";
+    position: absolute;
+    background-image: url(/todo2/unchecked2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 40%;
+    height: 30px;
+    width: 30px;
+    top: 20px;
+    left: 8px;
+}
+ul li.checked{
+    color: #c5bbbb;
+    text-decoration: line-through;
+    /* bottom: 20px; */
+}
+ul li.checked::before{
+    background-image: url(/todo2/checked2.webp);
+}
+ul li span{
+    position: absolute;
+    right: 5px;
+    top: 1rem;
+    width: 70px;
+    height: 30px;
+    background: rgb(46, 172, 73);
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 2px;
+    border: none;
+}
+ul li span:hover{
+    background: rgb(215, 138, 138);
+    border: 3px solid  rgb(46, 172, 73);
+    text-align: center;
+    padding-bottom: 5px;
+}
+@media screen and (min-width:768px) {
+    .wrapper{
+        width: 70%;
+    }
+    input{
+        margin-left: 20px;
+        width: 60%;
+        height: 50px;
+    }
+    button{
+        height: 50px;
+        width: 25%;
+        margin-left: 20px;
+    }
+}
