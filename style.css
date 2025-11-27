@@ -74,7 +74,7 @@ ul li:hover{
 ul li::before{
     content: "";
     position: absolute;
-    background-image: url(/todo2/unchecked2.png);
+    background-image: url(images/unchecked2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -90,7 +90,7 @@ ul li.checked{
     /* bottom: 20px; */
 }
 ul li.checked::before{
-    background-image: url(/todo2/checked2.webp);
+    background-image: url(images/checked2.webp);
 }
 ul li span{
     position: absolute;
